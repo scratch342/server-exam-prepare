@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon"
+    "start": "node backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
   "author": "",
   "license": "ISC",
@@ -18,4 +19,7 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   }
+  "engines": {
+     "node": "10.16.0"
+   }
 }

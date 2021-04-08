@@ -180,6 +180,7 @@ app.put('/newComment', (req, res) => {
 
 			//Returns the resulting object to the client
 			res.json(response);
+			console.log(response)
 
 			//Closes the database
 			db.close();
@@ -234,4 +235,4 @@ app.get('/', function(req, res){
    console.log('worked');
 });
 
-app.listen(27017);
+app.listen(process.env.PORT, process.env.IP);
