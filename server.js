@@ -235,4 +235,4 @@ app.get('/', function(req, res){
    console.log('worked');
 });
 
-app.listen(process.env.PORT, process.env.IP);
+app.listen(process.env.PORT || 3000);
